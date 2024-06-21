@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gradient-to-r from-gray-600 via-gray-400 to-gray-200 min-h-screen flex flex-col">
-    <h1 v-if="!selectedProduct && !productCard" class="text-5xl text-green-950 underline decoration-emerald-800 font-sans font-semibold italic text-center mt-10">
+    <h1 v-if="!selectedProduct && !productCard" class="text-5xl text-green-950 underline decoration-emerald-800 font-mono font-semibold text-center mt-10">
       {{ title }}
     </h1>
     <div class="flex-grow flex justify-center items-center"> 
@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      title: "Here are the most popular products of the moment!",
+      title: "Fake Store API",
       selectedProduct: null,
       productCard: null,
       showTitle: true,
